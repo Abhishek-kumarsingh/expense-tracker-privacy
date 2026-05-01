@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Expense Tracker</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.75;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 2rem; color: #00e676; margin-bottom: 0.25rem; }
+    .subtitle { color: #888; font-size: 0.9rem; margin-bottom: 2.5rem; }
+    h2 { font-size: 1.2rem; color: #ffffff; margin: 2rem 0 0.75rem; border-bottom: 1px solid #222; padding-bottom: 0.4rem; }
+    p { margin-bottom: 1rem; color: #ccc; }
+    ul { margin: 0.5rem 0 1rem 1.5rem; color: #ccc; }
+    li { margin-bottom: 0.4rem; }
+    a { color: #00e676; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      background: #00e67620;
+      color: #00e676;
+      border: 1px solid #00e676;
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    footer { margin-top: 3rem; color: #555; font-size: 0.85rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Expense Tracker &nbsp;·&nbsp; Last updated: May 1, 2026</p>
+
+    <span class="badge">Finance App · Android</span>
+
+    <p>
+      This Privacy Policy describes how <strong>Expense Tracker</strong> ("the App", "we", "us") collects,
+      uses, and protects information when you use our Android application
+      (<code>com.encrypting.expensetracker2</code>).
+    </p>
+    <p>
+      By using the App you agree to the collection and use of information as described in this policy.
+      If you do not agree, please do not use the App.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect only what is necessary to provide the App's features:</p>
+    <ul>
+      <li>
+        <strong>Account information</strong> — your email address when you sign up or sign in.
+        We use Supabase for authentication; your credentials are securely stored by Supabase.
+      </li>
+      <li>
+        <strong>Expense data</strong> — amounts, merchant names, categories, dates, and notes
+        that you enter manually or import from shared UPI receipts. This data is stored in your
+        Supabase account database and is associated with your user ID.
+      </li>
+      <li>
+        <strong>Device token</strong> — a Firebase Cloud Messaging (FCM) token used to deliver
+        push notifications (e.g., recurring expense reminders). This token identifies your device,
+        not you personally.
+      </li>
+    </ul>
+    <p>
+      We do <strong>not</strong> collect your name, phone number, location, contacts, camera
+      roll, payment card details, or any other personal data beyond the above.
+    </p>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To authenticate you and keep your data private to your account.</li>
+      <li>To store and sync your expense records across sessions.</li>
+      <li>To send you push notifications for recurring expense reminders (if enabled).</li>
+      <li>To pre-fill expense forms when you share a UPI receipt into the App (on-device parsing only — the receipt text is never sent to any server).</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, profiling, or any purpose beyond operating the App.</p>
+
+    <h2>3. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties, except:</p>
+    <ul>
+      <li>
+        <strong>Supabase</strong> — our backend provider for authentication and database storage.
+        Supabase processes data under their own
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+      </li>
+      <li>
+        <strong>Google Firebase (FCM)</strong> — used solely for push notification delivery.
+        Firebase processes data under
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+      </li>
+      <li>
+        <strong>Legal obligations</strong> — we may disclose data if required by law or to protect
+        the rights and safety of users.
+      </li>
+    </ul>
+
+    <h2>4. On-Device Processing</h2>
+    <p>
+      The UPI receipt parsing feature (Share-to-App intake) processes receipt text entirely on your
+      device using a bundled model. No receipt text or image is transmitted to any external server
+      or API. The extracted data (amount, merchant, date) is used only to pre-fill the expense form
+      and is not stored separately.
+    </p>
+
+    <h2>5. Data Retention</h2>
+    <p>
+      Your expense data is retained in your Supabase account for as long as you use the App.
+      You can delete individual expenses at any time within the App.
+      To delete your account and all associated data, contact us at
+      <a href="mailto:alpsingh03@gmail.com">alpsingh03@gmail.com</a> and we will process the
+      deletion within 30 days.
+    </p>
+
+    <h2>6. Data Security</h2>
+    <p>
+      Data in transit between the App and Supabase is encrypted via HTTPS/TLS.
+      Data at rest is secured by Supabase's infrastructure (row-level security policies ensure
+      each user can only access their own records).
+      We do not store credentials or sensitive data on the device beyond the authentication session token.
+    </p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+      The App is not directed at children under the age of 13. We do not knowingly collect
+      personal data from children under 13. If you believe we have inadvertently collected
+      such data, please contact us immediately so we can delete it.
+    </p>
+
+    <h2>8. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you.</li>
+      <li>Request correction of inaccurate data.</li>
+      <li>Request deletion of your data.</li>
+      <li>Withdraw consent at any time by deleting the App.</li>
+    </ul>
+    <p>
+      To exercise any of these rights, contact us at
+      <a href="mailto:alpsingh03@gmail.com">alpsingh03@gmail.com</a>.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will update the
+      "Last updated" date at the top of this page. We encourage you to review this page
+      periodically. Continued use of the App after changes constitutes acceptance of the
+      updated policy.
+    </p>
+
+    <h2>10. Contact Us</h2>
+    <p>
+      If you have questions or concerns about this Privacy Policy, please contact:<br />
+      <strong>Email:</strong> <a href="mailto:alpsingh03@gmail.com">alpsingh03@gmail.com</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Expense Tracker &nbsp;·&nbsp; All rights reserved
+    </footer>
+
+  </div>
+</body>
+</html>
